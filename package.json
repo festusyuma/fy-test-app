@@ -1,0 +1,19 @@
+{
+  "name": "test-fy-stack-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "@fy-stack/cli": "file:../../fy-stack/packages/cli",
+    "aws-cdk": "^2.174.1",
+    "aws-cdk-lib": "^2.174.1",
+    "constructs": "^10.4.2",
+    "@fy-stack/fullstack-construct": "^0.0.131"
+  }
+}
