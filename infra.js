@@ -23,6 +23,11 @@ class AppStack extends cdk.Stack {
           type: AppType.STATIC_WEBSITE,
           output: "./static"
         }
+      },
+      cdn: {
+        routes: {
+          "/*": { $resource: "web" }
+        }
       }
     });
 
