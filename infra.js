@@ -18,7 +18,12 @@ class AppStack extends cdk.Stack {
 
     const app = new FullStackConstruct(this, "App", {
       storage: { retainOnDelete: false },
-      apps: {}
+      apps: {
+        web: {
+          type: AppType.STATIC_WEBSITE,
+          output: "./static"
+        }
+      }
     });
 
     cdk.Tags.of(this).add("App", "test-app");
